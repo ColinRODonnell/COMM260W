@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        
+        <title>Index</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        
+        <link rel="stylesheet" type="text/css" href="styling.css" />
+        
+        
+    </head>
+    <body>
+        
+        
+        <nav>
+            <a href="index.html">Home</a> | <a href="interview.html">Interview Story</a> | <a href="beacon.html">Beacon Story</a> | <a href="https://github.com/ColinRODonnell/COMM260W.git" target="_blank">GitHub</a> 
+        </nav>
+        <figure>
+            <img src="images/behrend.png" width="1250" style="text-align: center;"></img>
+        </figure>
+        <hr></hr>  
+        
+        <p id="dateTime"></p>
+        
+        <hr></hr>
+        
+        <figure style="text-align: center;">
+            <h2 style="line-height:1.75;"><b>Today's News</b></h2>
+        </figure>
+        <table border="1" style="vertical-align: top;">
+            <tr>
+                <td><b>Interview with Nicole Conroy</b></td>
+                <td><b>Movie Review of Turbo (2013)</b></td>
+            </tr>
+            <tr>
+                <td>By Colin O'Donnell
+                    
+                    <figure><img src="images/Colin%20ODonnell%20Self%20Portrait%20Final.png" width="350"></img>
+                        <figcaption>Interviewer, Colin Raymond O'Donnell, Junior</figcaption>
+                    </figure>
+                    <h3>Partially Deaf, Her Stories Fully Told: Ms. Conroy’s Journey</h3>
+                    
+                    
+                    <section>Her matte-black hair droops over her shoulders, and three scars mark her pale-skinned figure, with only one ear that picks up the world’s sounds. Yet on Wednesday, on campus, she laughs freely, softly but energetically recounting her stories about sorority life, road trips across the country and her childhood pool parties in Alabama. Her memories reveal the resilience that guided her throughout college and shaped her into the person she is today.<br></br> 
+                        
+                        Nicole Conroy has grown up chasing nature. Her early years were a combination of Hawaii, Washington, Alabama, Colorado and Maryland. Each place molded her in small and significant ways, she said. Road trips around the states transformed into her favorite childhood memories. The wilderness of Wyoming, the sunshine of Florida and the deserts of Arizona left a lasting impact on her love of travel and exploration. Apart from moving often, which might be detrimental for other children, Nicole learned to be strong through new scenery. These qualities that she would carry to future chapters of her life. 
+                        
+                        </section>
+                    <a href="interview.html" target="blank" style="display: block; text-align: center;">
+                        Read More
+                    </a></td>
+                <td>By Colin O'Donnell
+                    <p>MOVIE REVIEW<br></br> 
+                        
+                        <b>“Turbo”: High-Octane Clash Between an Energized Snail &amp; F1 Cars</b><br></br>
+                        
+                        David Soren’s epic tale of an ordinary snail defying all odds<br></br> 
+                        
+                    </p>
+                    <figure>
+                        <img src="images/moviecover.jfif" width="200"></img>
+                        <figcaption>Turbo the Snail and his Crew</figcaption>
+                    </figure>
+                    <br></br>
+                    
+                    <i>Where to Watch: Netflix, Amazon Prime Video ($3.99), VUDU ($7.99)</i><br></br>
+                    <a href="https://www.youtube.com/watch?v=VlRtm8Gh9PQ" target="blank">Watch Trailer</a>
+                    <div>
+                        <p><b>Title:</b> Turbo<br></br>
+                            <b>Director:</b> David Soren<br></br>
+                            <b>Genres:</b> Comedy, Action, Animation<br></br>
+                            <b>MPAA Rating:</b> PG<br></br>
+                            <b>Duration:</b> 1h 36min<br></br>
+                            <b>Producer(s):</b> DreamWorks Animation<br></br></p></div>
+                    <section>Ever dreamt of a turbo-charged snail? Gifted the powers of nitrous, Theo the Snail competes against lightning-fast F1 race cars. Nicknamed Turbo, the slimy specimen is about to redefine what it means to go at a ‘snail’s pace.’ “Turbo” boasts constant action and spectacular visuals that make the audience jump out of their shells. Additionally, with “Turbo’s” status as a classic children’s movie, the viewer is absorbed by a sense of nostalgia. This review will dive into what makes the movie “Turbo” so enjoyable.<br></br> 
+                        
+                        </section>
+                    <a href="beacon.html" target="blank" style="display: block; text-align: center;">
+                        Read More
+                    </a></td> 
+                        
+         
+            </tr>
+        </table>
+        <script>
+  const today = new Date();
+
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const dayName = days[today.getDay()];
+  const monthName = months[today.getMonth()];
+  const date = today.getDate();
+  const year = today.getFullYear();
+
+  document.getElementById("dateOutput").innerText =
+    `${dayName}, ${monthName} ${date}, ${year}`;
+</script>
+        <script>
+  function updateDateTime() {
+    const now = new Date();
+
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const months = [
+      "January","February","March","April","May","June",
+      "July","August","September","October","November","December"
+    ];
+
+    const dayName = days[now.getDay()];
+    const monthName = months[now.getMonth()];
+    const date = now.getDate();
+    const year = now.getFullYear();
+
+    // EST time (America/New_York automatically handles EST/EDT)
+    const time = now.toLocaleTimeString("en-US", {
+      timeZone: "America/New_York",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit"
+    });
+
+    document.getElementById("dateTime").innerText =
+      `${dayName}, ${monthName} ${date}, ${year} — ${time} EST`;
+  }
+
+  updateDateTime();
+  setInterval(updateDateTime, 1000);
+</script>
+        <footer>
+            <h3><b>Contacts</b> 
+            </h3>
+            
+            Phone: (814)-790-0029<br></br>
+            Email: cro5191@psu.edu <br></br>
+            LinkedIn: <a href="https://www.linkedin.com/in/colin-o-donnell-767865351/" target="_blank">view here</a> 
+            
+        </footer>
+        
+    </body>
+    
+</html>

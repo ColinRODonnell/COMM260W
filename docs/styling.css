@@ -1,0 +1,69 @@
+body {
+    background: white;
+    font-family: Arial, "Courier New", sans-serif;
+    line-height:1.0em;
+}
+
+table {
+    background: #bebebe;
+}
+
+div.wide {
+    width:90%;
+    max-width:1280px;
+    max-height:720px;
+    
+    
+}
+
+footer {
+    background:#28f2df 
+}
+
+iframe.thinglink {
+    width:960px; 
+    height:720px;}
+
+
+
+figcaption { 
+    text-align: center;
+    background: #28f2df;
+}
+
+
+img#PSB {
+    width: 10%;
+}
+
+img#snip1:hover {
+    transition:0.3s ease;
+    transform:scale(1.5);
+}
+
+
+div.flex {
+    
+   display:flex; 
+   
+}
+
+section {
+    background: grey;
+    width: 90%;
+    margin: auto;
+    padding:1em;
+}
+
+section.resume {
+    padding-left: 5em;
+    padding-right: 5em;
+    background:silver;
+   
+}
+
+section.inner {
+    background:white;
+
+
+
