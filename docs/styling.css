@@ -5,7 +5,7 @@ body {
 }
 
 table {
-    background: #bebebe;
+    background: #add8e6;
 }
 
 div.wide {
@@ -17,7 +17,8 @@ div.wide {
 }
 
 footer {
-    background:#28f2df 
+    background: #041E42;
+    color: white;
 }
 
 iframe.thinglink {
@@ -28,7 +29,8 @@ iframe.thinglink {
 
 figcaption { 
     text-align: center;
-    background: #28f2df;
+    background: #041E42;
+    color: white;
 }
 
 
@@ -49,7 +51,7 @@ div.flex {
 }
 
 section {
-    background: grey;
+    background: white;
     width: 90%;
     margin: auto;
     padding:1em;
@@ -64,6 +66,26 @@ section.resume {
 
 section.inner {
     background:white;
+}
 
+.navbar {
+    background-color: #041E42;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #add8e6;
+}
 
+.navbar a {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #add8e6;
+    color: #000;
 
